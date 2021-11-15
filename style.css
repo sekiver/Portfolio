@@ -1,0 +1,246 @@
+/* 
+Themes Name : Portfolio
+Author      : John Doe
+Version     : 1.0
+Licensed    : GPL Themes
+*/
+
+
+/* Navigation */
+nav {
+    position: relative;
+    background-color: #06357a;
+}
+
+nav .navbar-brand {
+    font-size: 25px;
+}
+
+nav a.nav-link {
+    color:#a1c2f3 !important;
+    font-size: 20px;
+}
+
+nav a.nav-link.active,nav a.nav-link:hover {
+    color: #fff !important;
+}
+
+/* About */
+#about {
+    position: relative;
+    background-color: #a1c2f3;
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+
+#about img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #06357a;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: top center;
+    -o-object-position: top center;
+}
+
+#about h1 {
+    position: relative;
+    margin: 0;
+    padding-top: 25px;
+    color: #06357a;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#about h5 {
+    position: relative;
+    margin: 0; padding: 0;
+    color: #494949;
+    font-size: 20px;
+}
+
+/* Services */
+#service {
+    position: relative;
+}
+
+#service h2 {
+    position: relative;
+    margin-bottom: 50px;
+    color: #06357a;
+    font-size: 40px;
+}
+
+#service .service-list {
+    position: relative;
+    padding: 15px 0;
+}
+
+#service .service-list .service-item {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#service .service-list .service-item img {
+    width: 85%;
+}
+
+#service .service-list .service-item h3 {
+    color: #06357a;
+    margin: 15px 0;
+    text-transform: uppercase;
+}
+
+#service .service-list .service-item p {
+    color: #797676;
+    font-size: 18px;
+}
+
+#service .service-list .service-item a.btn {
+    background-color: #06357a;
+    border: 2px solid #06357a;
+    font-size: 20px;
+    margin-top: 15px;
+    width: 50%;
+}
+
+#service .service-list .service-item a.btn:hover {
+    background-color: transparent;
+    color: #06357a;
+}
+
+/* Projects */
+#project {
+    position: relative;
+    background-color: #a1c2f3;
+    padding: 0 0 50px 0;
+}
+
+#project h2 {
+    position: relative;
+    margin-bottom: 50px;
+    color: #06357a;
+    font-size: 40px;
+}
+
+#project .project-item {
+    position: relative;
+    margin: 25px 0;
+}
+
+#project .project-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: top center;
+    -o-object-position: top center;
+    margin-bottom: 15px;
+}
+
+#project .project-item h3 {
+    position: relative;
+    font-size: 20px;
+    color: #06357a;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#project .project-item h5 {
+    position: relative;
+    color:#494949;
+    font-size: 16px;
+}
+
+/* Testimonials */
+#testimonial {
+    position: relative;
+    padding: 0 0 50px 0;
+}
+
+#testimonial h2 {
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #06357a;
+    font-size: 40px;
+    text-align: center;
+}
+
+#testimonial .carousel-item .carousel-content {
+    text-align: center;
+    padding: 0 100px;
+}
+
+#testimonial .carousel-item .carousel-content img {
+    width: 160px;
+    border: 4px solid #06357a;
+    margin-bottom: 15px;
+}
+
+#testimonial .carousel-item .carousel-content h5 {
+    color: #06357a;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#testimonial .carousel-item .carousel-content p {
+    font-size: 18px;
+}
+
+/* Contact */
+#contact {
+    position: relative;
+    padding-bottom: 50px;
+    background-color: #a1c2f3;
+}
+
+#contact form {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form label {
+    color: #06357a;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#contact form input[type="text"],#contact form input[type="email"],#contact form textarea {
+    position: relative;
+    padding: 8px 10px; 
+    border-radius: 0; -webkit-border-radius: 0;
+    border: 2px solid #06357a;
+}
+
+#contact form button[type="submit"] {
+    position: relative;
+    display: block;
+    width: 50%;
+    background-color: #06357a;
+    color: #fff;
+    border: 2px solid #06357a;
+    margin: 15px auto;
+}
+
+#contact form button[type="submit"]:hover {
+    background-color: transparent;
+    color: #06357a;
+}
+
+/* Footer */
+#footer {
+    position: relative;
+    padding: 10px;
+}
+
+#footer p {
+    position: relative;
+    text-align: center;
+    color: #06357a;
+    font-weight: 600;
+    margin: 0;
+}
