@@ -14,6 +14,7 @@ nav {
 
 nav .navbar-brand {
     font-size: 25px;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 nav a.nav-link {
@@ -29,7 +30,7 @@ nav a.nav-link.active,nav a.nav-link:hover {
 #about {
     position: relative;
     background-color: #a1c2f3;
-    padding: 50px 0 0 0;
+    padding: 120px 0 0 0;
     text-align: center;
 }
 
@@ -50,6 +51,7 @@ nav a.nav-link.active,nav a.nav-link:hover {
     color: #06357a;
     font-size: 40px;
     text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 #about h5 {
@@ -57,6 +59,21 @@ nav a.nav-link.active,nav a.nav-link:hover {
     margin: 0; padding: 0;
     color: #494949;
     font-size: 20px;
+}
+
+#about button.btn {
+    background-color: #06357a;
+    border: 2px solid #06357a;
+    font-size: 20px;
+    margin-top: 15px;
+    width: 50%;
+    box-shadow: unset;
+    -webkit-box-shadow: unset;
+}
+
+#about button.btn:hover {
+    background-color: transparent;
+    color: #06357a;
 }
 
 /* Services */
@@ -69,6 +86,7 @@ nav a.nav-link.active,nav a.nav-link:hover {
     margin-bottom: 50px;
     color: #06357a;
     font-size: 40px;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 #service .service-list {
@@ -122,6 +140,7 @@ nav a.nav-link.active,nav a.nav-link:hover {
     margin-bottom: 50px;
     color: #06357a;
     font-size: 40px;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 #project .project-item {
@@ -166,6 +185,7 @@ nav a.nav-link.active,nav a.nav-link:hover {
     color: #06357a;
     font-size: 40px;
     text-align: center;
+    font-family: 'Luckiest Guy', cursive;
 }
 
 #testimonial .carousel-item .carousel-content {
@@ -244,3 +264,37 @@ nav a.nav-link.active,nav a.nav-link:hover {
     font-weight: 600;
     margin: 0;
 }
+
+
+/* Responisve */
+@media(max-width:800px){
+    #project .project-item img {
+        height: 160px;
+    }
+}
+
+@media(max-width:640px){
+    #project .project-item img {
+        height: 400px;
+    }
+
+    #testimonial .carousel-item .carousel-content {
+        padding: 0 25px;
+    }
+
+    #service h2,#project h2 {
+        text-align: center;
+    }
+}
+
+@media(max-width:480px){
+
+    #project .project-item {
+        text-align: center;
+    }
+    
+    #project .project-item img {
+        height: 300px;
+    }
+}
+

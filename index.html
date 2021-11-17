@@ -6,8 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe - Web Developer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
     <!-- Bootstrap 5 -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="assets/plugins/lightbox/css/lightbox.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
     <!-- jQuery 3.6 -->
@@ -17,7 +23,7 @@
 <body>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="#">John Doe</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,22 +33,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#service">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Projects</a>
+                        <a class="nav-link" href="#project">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Testimonials</a>
+                        <a class="nav-link" href="#testimonial">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -56,6 +62,9 @@
             <img class="rounded-circle" src="assets/images/avatar.jpeg" alt="">
             <h1>John Doe</h1>
             <h5>WEB DEVELOPER - COACH WEBSITE - MARKETING EXPERT</h5>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#video">
+                Watch Video
+            </button>
         </div>
         <!-- Waves Bottom -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -109,32 +118,44 @@
             <div class="project-list">
                 <div class="row">
                     <div class="project-item col-md-4">
-                        <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        <a href="assets/images/portfolio-thumb.jpeg" data-lightbox="project-1" data-title="Portfolio 1">
+                            <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        </a>
                         <h3>Porfolio 1</h3>
                         <h5>HTML5, BOOTSTRAP 5, JQUERY</h5>
                     </div>
                     <div class="project-item col-md-4">
-                        <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        <a href="assets/images/portfolio-thumb.jpeg" data-lightbox="project-2" data-title="Portfolio 2">
+                            <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        </a>
                         <h3>Porfolio 1</h3>
                         <h5>HTML5, BOOTSTRAP 5, JQUERY</h5>
                     </div>
                     <div class="project-item col-md-4">
-                        <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        <a href="assets/images/portfolio-thumb.jpeg" data-lightbox="project-3" data-title="Portfolio 3">
+                            <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        </a>
                         <h3>Porfolio 1</h3>
                         <h5>HTML5, BOOTSTRAP 5, JQUERY</h5>
                     </div>
                     <div class="project-item col-md-4">
-                        <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        <a href="assets/images/portfolio-thumb.jpeg" data-lightbox="project-4" data-title="Portfolio 4">
+                            <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        </a>
                         <h3>Porfolio 1</h3>
                         <h5>HTML5, BOOTSTRAP 5, JQUERY</h5>
                     </div>
                     <div class="project-item col-md-4">
-                        <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        <a href="assets/images/portfolio-thumb.jpeg" data-lightbox="project-5" data-title="Portfolio 5">
+                            <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        </a>
                         <h3>Porfolio 1</h3>
                         <h5>HTML5, BOOTSTRAP 5, JQUERY</h5>
                     </div>
                     <div class="project-item col-md-4">
-                        <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        <a href="assets/images/portfolio-thumb.jpeg" data-lightbox="project-6" data-title="Portfolio 6">
+                            <img src="assets/images/portfolio-thumb.jpeg" alt="">
+                        </a>
                         <h3>Porfolio 1</h3>
                         <h5>HTML5, BOOTSTRAP 5, JQUERY</h5>
                     </div>
@@ -249,8 +270,29 @@
     </footer>
     <!-- End Footer -->
 
+    <!-- Modal Video About -->
+    <div class="modal fade" id="video" tabindex="-1" aria-labelledby="videoLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoLabel">Video Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/bRxZliF-6Vg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Edn Modal Video About -->
+
     <!-- Bootstrap JS -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="assets/plugins/lightbox/js/lightbox.min.js"></script>
 </body>
 
 </html>
